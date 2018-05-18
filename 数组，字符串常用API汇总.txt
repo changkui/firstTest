@@ -1,0 +1,45 @@
+数组，字符串常用API汇总
+
+一次性定时器和周期性定时器
+var time=null;
+var timet=setTimeout('fun()',20);
+var timei=setInterval('fun()',20);
+clearTimeout(timet);
+clearInterval(tiemei);
+数组
+数组是引用类型的对象：
+var arr=[xx...];var arr=new Array(xxx...);
+var arr=new Array(n)//初始化n个空元素
+arr[arr.length-1]=xx;
+arr[arr.length]=xx;
+关联数组
+var ym=[];
+ym['name']='洋迷';
+for(var key in ym){ym[key]}
+数组API
+   1.var str=arr.toString();以逗号分隔元素
+   2.var str=arr.jion('连接符');
+   3.var newarr=arr.concat(xx,xx,[xx,xx]...);
+   4.var sarr=arr.slice(starti,[endi+1]);截取 含头不含尾
+   5.var sarr=arr.splice(starti,n);删除
+   6.var sarr=arr.splice(starti,0,xx,xx);插入
+   7.var sarr=arr.splice(starti,n,xx,xx);替换
+   8.var sarr=arr.reverse();颠倒翻转
+   9.var sarr=arr.sort();只能将所有元素转为字符串再排序
+   10.arr.sort(compare);升序：function compare(a,b){return a-b};
+                        降序：function compare(a,b){return b-a};
+   11-12.开头: 入栈：arr.unshift(xx);出栈：arr.shift();
+   13-14.末尾：入栈：arr.push(xx); 出栈:arr.pop();
+
+
+字符串API
+   1.var newStr=str.toUpperCase();转为大写
+   2.var newStr=str.toLowerCase();转为小写
+   3.var char=str.charAt(i);获取指定位置的字符
+   4.var unicode=str.charCodeAt(i);获取指定位置的unicode 
+   5.var i=str.indexOf('关键字',[fromi]); 
+   6.var i=str.lastIndexOf('关键字',[fromi]); 
+   7.var subStr=str.slice(starti,[endi+1]);
+   8.var subStr=str.substring(starti,[endi+1]);
+   9.var subStr=str.substr(starti,n);
+   10.var strs=str.split('分隔符');
