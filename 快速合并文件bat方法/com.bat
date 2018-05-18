@@ -1,0 +1,1 @@
+copy one.js+two.js all.bin.js /b 
